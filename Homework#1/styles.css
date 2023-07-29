@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 45%;
+}
+
+h2, blockquote, a {
+    text-align: center;
+}
+
+h2 {
+    letter-spacing: 10px;
+    word-spacing: 1px;
+}
+
+a {
+    display: block;
+    line-height: 1px;
+}
+
+hr {
+    width: 100%;
+    margin: 10px 0;
+}
+
+ul {
+    padding: 10;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.left-align {
+    text-align: left;
+}
