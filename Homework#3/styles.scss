@@ -1,4 +1,7 @@
 .skills {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 100px 0 101px 0;
   h2{
     color: #070707;
     text-align: center;
@@ -16,5 +19,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 20px 0 50px 0;
+  }
+  .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
