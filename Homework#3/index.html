@@ -7,7 +7,7 @@
     <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
-<header>
+<header class="container">
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -19,9 +19,17 @@
     </nav>
 </header>
 <main>
-    <section class="main"></section>
-    <section class="about"></section>
-    <section class="skills">
+    <section class="main container">
+        <h2>Denis Novik</h2>
+        <img src="img/portrait.png" alt="">
+    </section>
+    <section class="about">
+        <h2>About me</h2>
+        <p>Hi, I'm Denis – UX/UI designer from Minsk.<br /> I'm interested in design and everything connected with it.</p>
+        <p>I'm studying at courses "Web and mobile design<br /> interfaces" in IT-Academy.</p>
+        <p>Ready to implement excellent projects<br /> with wonderful people.</p>
+    </section>
+    <section class="skills container">
         <h2>Skills</h2>
         <p>I work in such programs as</p>
         <div class="items">
@@ -31,10 +39,33 @@
             <img class="item" src="img/figma.png" alt="">
         </div>
     </section>
-    <section class="portfolio"></section>
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <figure class="fashion container">
+            <img src="img/fashion_store.png" alt="">
+            <figcaption>Online fashion store -<br /> Homepage</figcaption>
+        </figure>
+        <figure class="reebok container">
+            <img src="img/reebok.png" alt="">
+            <figcaption>Reebok Store - Concept</figcaption>
+        </figure>
+        <figure class="braun container">
+            <img src="img/braun.png" alt="">
+            <figcaption>Braun Landing Page - Concept</figcaption>
+        </figure>
+    </section>
 </main>
-<footer>
-
+<footer class="container">
+    <h2>Contacts</h2>
+    <p>Want to know more or just chat?<br /> You are welcome!</p>
+    <button>Send message</button>
+    <ul>
+        <li><a href="#"><img src="img/linkedin.png" alt=""></a></li>
+        <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+        <li><a href="#"><img src="img/behance.png" alt=""></a></li>
+        <li><a href="#"><img src="img/dribbble.png" alt=""></a></li>
+    </ul>
+    <span>Like me on<br /> LinkedIn, Instagram, Behance, Dribble</span>
 </footer>
 </body>
 </html>
