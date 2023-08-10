@@ -2,11 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Form</title>
     <link href="./reset.css" rel="stylesheet">
-<!--    <link href="./styles.css" rel="stylesheet">-->
+    <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
-
+<form action="#" method="post" name="contact" class="container">
+    <h2>Registration Form</h2>
+    <label><span>Full name</span>
+        <input type="text" name="name" required placeholder="Your first and second name"/>
+    </label>
+    <label><span>E-mail</span>
+        <input type="email" name="email" required placeholder="email@mail.com"/>
+    </label>
+    <label><span>Password</span>
+        <input type="password" name="password" required placeholder="****"/>
+    </label>
+    <label><span>Confirm your password</span>
+        <input type="password" name="password" required placeholder="****"/>
+    </label>
+    <label><span>Sex</span>
+        <input type="radio" name="sex" value="Male" required/>Male
+        <input type="radio" name="sex" value="Female" required/>Female
+    </label>
+    <label><span>Age</span>
+        <input type="number" name="age" required />
+    </label>
+    <label><span>Course</span>
+        <select required>
+            <option value="choose"><=Choose your course=></option>
+            <option value="front-end">Front-End</option>
+            <option value="back-end">Back-End</option>
+            <option value="front-end">Project Management</option>
+            <option value="front-end">QA Manual</option>
+        </select>
+    </label>
+    <label><span>Address</span>
+        <textarea required placeholder="Country, region, city/town, street"></textarea>
+    </label>
+    <label>
+        <input type="checkbox" name="confirmation" required checked/>I agree with the terms of privacy
+    </label>
+    <div class="btn-container">
+        <button type="reset">Clear form</button>
+        <button type="submit">Sign up</button>
+    </div>
+</form>
 </body>
 </html>
