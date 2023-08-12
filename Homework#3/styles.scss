@@ -1,0 +1,217 @@
+.container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  border-bottom: 1px solid #828282;
+  nav {
+    width: 496px;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        a {
+          color: #828282;
+          font-family: Open Sans;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.36px;
+          text-decoration: unset;
+        }
+      }
+    }
+  }
+}
+.main {
+  padding-top: 12px;
+  h2 {
+    color: #070707;
+    font-family: Open Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+  }
+}
+.about {
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 100px;
+  h2 {
+    color: #070707;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+  }
+  p {
+    color: #070707;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+}
+.skills {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 100px 0 101px 0;
+  h2{
+    color: #070707;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  p {
+    color: #070707;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px 0 50px 0;
+  }
+  .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.portfolio {
+  background: #F6F6F6;
+  padding: 100px 0;
+  h2 {
+    color: #070707;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+  }
+  .fashion {
+    margin-bottom: 70px;
+    figcaption {
+      color: #070707;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration-line: underline;
+      margin-top: 40px;
+    }
+  }
+  .reebok {
+    margin-bottom: 70px;
+    figcaption {
+      color: #070707;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration-line: underline;
+      margin-top: 40px;
+    }
+  }
+  .braun {
+    figcaption {
+      color: #070707;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration-line: underline;
+      margin-top: 40px;
+    }
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+footer h2 {
+  color: #070707;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+footer p {
+  color: #070707;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 60px;
+  max-width: 280px;
+  width: 100%;
+}
+footer button {
+  border-radius: 22px;
+  background: #070707;
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  margin-bottom: 30px;
+  width: 180px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer ul {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+footer span {
+  color: #828282;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 200px;
+  width: 100%;
+}
