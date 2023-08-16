@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100&display=swap");
 header {
   width: 1440px;
   height: 80px;
@@ -78,6 +79,50 @@ header .content .sign_up {
   height: 46px;
   padding: 9px 21px;
   margin-left: 32px;
+}
+
+main .first-screen {
+  width: 1200px;
+  height: 500px;
+  margin: 70px 120px;
+}
+main .first-screen .left-side {
+  display: inline-block;
+  margin-right: 52px;
+}
+main .first-screen .left-side h1 {
+  color: #2F281E;
+  font-family: "Montserrat";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  margin-top: 97px;
+}
+main .first-screen .left-side p {
+  color: #544837;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 30px 0 20px;
+}
+main .first-screen .left-side button {
+  border-radius: 4px;
+  background: #F90;
+  color: #FFF;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 13px 40px;
+}
+main .first-screen img {
+  display: inline-block;
+  padding-bottom: 235px;
 }
 
 /*# sourceMappingURL=style.css.map */
