@@ -13,7 +13,7 @@ header .content img, header .content nav, header .content button {
 }
 header .content .product {
   color: #F90;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -23,7 +23,7 @@ header .content .product {
 }
 header .content .customers {
   color: #2F281E;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -33,7 +33,7 @@ header .content .customers {
 }
 header .content .pricing {
   color: #2F281E;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -44,7 +44,7 @@ header .content .pricing {
 header .content .resources {
   color: #2F281E;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -56,7 +56,7 @@ header .content .sign_in {
   border-radius: 4px;
   border: 1px solid #BCD0E5;
   color: #2F281E;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -70,7 +70,7 @@ header .content .sign_up {
   border-radius: 4px;
   background: #F90;
   color: #FFF;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -79,8 +79,12 @@ header .content .sign_up {
   height: 46px;
   padding: 9px 21px;
   margin-left: 32px;
+  border: unset;
 }
 
+main {
+  width: 1440px;
+}
 main .first-screen {
   width: 1200px;
   height: 500px;
@@ -92,7 +96,7 @@ main .first-screen .left-side {
 }
 main .first-screen .left-side h1 {
   color: #2F281E;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
@@ -101,7 +105,7 @@ main .first-screen .left-side h1 {
 }
 main .first-screen .left-side p {
   color: #544837;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -113,18 +117,92 @@ main .first-screen .left-side button {
   background: #F90;
   color: #FFF;
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   padding: 13px 40px;
+  border: unset;
 }
 main .first-screen img {
   display: inline-block;
   padding-bottom: 235px;
 }
+main .features {
+  background-image: url("img/bg.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 510px;
+}
+main .features h2 {
+  color: #2F281E;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 1px;
+  margin-bottom: 50px;
+}
+main .features .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 19.23px 120px 0;
+}
+main .features .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+main .features .cards .card h2 {
+  color: #2F281E;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+main .features .cards .card p {
+  color: #544837;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+main .features button {
+  border-radius: 4px;
+  background: #F90;
+  color: #FFF;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 70px 623px 76px;
+  padding: 13px 40px;
+  border: unset;
+}
 
+footer {
+  width: 1440px;
+  border-top: 2px solid;
+  border-top-color: rgba(188, 208, 229, 0.5);
+}
 footer .content {
   width: 1200px;
   display: flex;
@@ -137,7 +215,7 @@ footer .content img {
 }
 footer .content .links h2 {
   color: #2F281E;
-  font-family: Gotham;
+  font-family: "Gotham", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -153,15 +231,15 @@ footer .content .links ul {
 footer .content .links ul li {
   color: #544837;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
 }
 footer .content .stuff h2 {
   color: #2F281E;
-  font-family: Gotham;
+  font-family: "Gotham", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -177,7 +255,7 @@ footer .content .stuff ul {
 footer .content .stuff ul li {
   color: #544837;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -191,7 +269,7 @@ footer .content .form {
 }
 footer .content .form h2 {
   color: #2F281E;
-  font-family: Gotham;
+  font-family: "Gotham", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -201,13 +279,13 @@ footer .content .form input {
   display: flex;
   width: 340px;
   height: 50px;
-  padding: 0px 10px;
+  padding: 0 10px;
   align-items: center;
   gap: 10px;
   border-radius: 4px;
   border: 1px solid #BCD0E5;
   color: #BCD0E5;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -224,11 +302,12 @@ footer .content .form button {
   background: #F90;
   color: #FFF;
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  border: unset;
 }
 
 /*# sourceMappingURL=style.css.map */

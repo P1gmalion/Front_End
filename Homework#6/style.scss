@@ -11,7 +11,7 @@ header {
     }
     .product {
       color: #F90;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -21,7 +21,7 @@ header {
     }
     .customers {
       color: #2F281E;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -31,7 +31,7 @@ header {
     }
     .pricing {
       color: #2F281E;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -42,7 +42,7 @@ header {
     .resources {
       color: #2F281E;
       font-feature-settings: 'clig' off, 'liga' off;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -54,7 +54,7 @@ header {
       border-radius: 4px;
       border: 1px solid #BCD0E5;
       color: #2F281E;
-      font-family: Montserrat;
+      font-family: 'Montserrat', sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
@@ -68,7 +68,7 @@ header {
       border-radius: 4px;
       background: #F90;
       color: #FFF;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
@@ -77,10 +77,12 @@ header {
       height: 46px;
       padding: 9px 21px;
       margin-left: 32px;
+      border: unset;
     }
   }
 }
 main {
+  width: 1440px;
   .first-screen {
     width: 1200px;
     height: 500px;
@@ -90,7 +92,7 @@ main {
       margin-right: 52px;
       h1 {
         color: #2F281E;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', sans-serif;
         font-size: 44px;
         font-style: normal;
         font-weight: 700;
@@ -99,7 +101,7 @@ main {
       }
       p {
         color: #544837;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', sans-serif;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -111,12 +113,13 @@ main {
         background: #F90;
         color: #FFF;
         text-align: center;
-        font-family: 'Poppins';
+        font-family: 'Poppins', sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         padding: 13px 40px;
+        border: unset;
       }
     }
     img {
@@ -124,8 +127,79 @@ main {
       padding-bottom: 235px;
     }
   }
+  .features {
+    background-image: url("img/bg.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 510px;
+    h2 {
+      color: #2F281E;
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-top: 1px;
+      margin-bottom: 50px;
+    }
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 19.23px 120px 0;
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-shrink: 0;
+        h2 {
+          color: #2F281E;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-top: 30px;
+          margin-bottom: 16px;
+        }
+        p {
+          color: #544837;
+          font-feature-settings: 'clig' off, 'liga' off;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 26px;
+        }
+      }
+    }
+    button {
+      border-radius: 4px;
+      background: #F90;
+      color: #FFF;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      margin: 70px 623px 76px;
+      padding: 13px 40px;
+      border: unset;
+    }
+  }
 }
 footer {
+  width: 1440px;
+  border-top: 2px solid;
+  border-top-color: rgba(188, 208, 229, 0.50);
   .content {
     width: 1200px;
     display: flex;
@@ -138,7 +212,7 @@ footer {
     .links {
       h2 {
         color: #2F281E;
-        font-family: Gotham;
+        font-family: 'Gotham', sans-serif;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
@@ -153,18 +227,18 @@ footer {
         li {
           color: #544837;
           font-feature-settings: 'clig' off, 'liga' off;
-          font-family: Montserrat;
+          font-family: 'Montserrat', sans-serif;
           font-size: 16px;
           font-style: normal;
           font-weight: 500;
-          line-height: 26px; /* 162.5% */
+          line-height: 26px;
         }
       }
     }
     .stuff {
       h2 {
         color: #2F281E;
-        font-family: Gotham;
+        font-family: 'Gotham', sans-serif;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
@@ -179,7 +253,7 @@ footer {
         li {
           color: #544837;
           font-feature-settings: 'clig' off, 'liga' off;
-          font-family: Montserrat;
+          font-family: 'Montserrat', sans-serif;
           font-size: 16px;
           font-style: normal;
           font-weight: 500;
@@ -194,7 +268,7 @@ footer {
       gap: 25px;
       h2 {
         color: #2F281E;
-        font-family: Gotham;
+        font-family: 'Gotham', sans-serif;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
@@ -204,13 +278,13 @@ footer {
         display: flex;
         width: 340px;
         height: 50px;
-        padding: 0px 10px;
+        padding: 0 10px;
         align-items: center;
         gap: 10px;
         border-radius: 4px;
         border: 1px solid #BCD0E5;
         color: #BCD0E5;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -227,11 +301,12 @@ footer {
         background: #F90;
         color: #FFF;
         text-align: center;
-        font-family: Poppins;
+        font-family: 'Poppins', sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        border: unset;
       }
     }
   }
