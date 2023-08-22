@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cities {
+  h2 {
+    color: #000;
+    text-align: center;
+    font-family: 'Delius Unicase', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 370px 370px 370px;
+    gap: 30px;
+    grid-template-areas: "tower eve-street eve-street"
+                         "day-street day-street white-building"
+                         "night-street bridge bridge";
+    .item {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .text {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        box-sizing: border-box;
+        padding: 0 20px 20px 20px;
+        background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.50%);
+        .author {
+          color: #FFF;
+          font-family: 'Roboto', sans-serif;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .date {
+          color: #E0E0E0;
+          font-family: 'Roboto', sans-serif;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+    .item:nth-child(1) {
+      grid-area: tower;
+    }
+    .item:nth-child(2) {
+      grid-area: eve-street;
+    }
+    .item:nth-child(3) {
+      grid-area: day-street;
+    }
+    .item:nth-child(4) {
+      grid-area: white-building;
+    }
+    .item:nth-child(5) {
+      grid-area: night-street;
+    }
+    .item:nth-child(6) {
+      grid-area: bridge;
+    }
+  }
+}
