@@ -189,11 +189,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 370px 370px 370px 370px 370px;
     gap: 30px;
-    grid-template-areas: "black-dress yellow-costume black-white"
-                         "black-woman yellow-costume woman-oranges"
-                         "woman-hats man-glasses woman-oranges"
-                         "woman-hats four-people four-people"
-                         "black-man black-man man-woman";
+    grid-template-areas: "item-1 item-2 item-3"
+                         "item-4 item-2 item-5"
+                         "item-6 item-7 item-5"
+                         "item-6 item-8 item-8"
+                         "item-9 item-9 item-10";
     .item {
       position: relative;
       border-radius: 20px;
@@ -237,34 +237,34 @@
       }
     }
     .item:nth-child(1) {
-      grid-area: black-woman;
+      grid-area: item-1;
     }
     .item:nth-child(2) {
-      grid-area: yellow-costume;
+      grid-area: item-2;
     }
     .item:nth-child(3) {
-      grid-area: white-black;
+      grid-area: item-3;
     }
     .item:nth-child(4) {
-      grid-area: black-woman;
+      grid-area: item-4;
     }
     .item:nth-child(5) {
-      grid-area: woman-oranges;
+      grid-area: item-5;
     }
     .item:nth-child(6) {
-      grid-area: woman-hats;
+      grid-area: item-6;
     }
     .item:nth-child(7) {
-      grid-area: man-glasses;
+      grid-area: item-7;
     }
     .item:nth-child(8) {
-      grid-area: four-glasses;
+      grid-area: item-8;
     }
     .item:nth-child(9) {
-      grid-area: black-man;
+      grid-area: item-9;
     }
     .item:nth-child(10) {
-      grid-area: man-woman;
+      grid-area: item-10;
     }
   }
 }
