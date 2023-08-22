@@ -39,9 +39,9 @@
       }
       .text {
         display: flex;
-        align-items: flex-end;
         justify-content: space-between;
         position: absolute;
+        flex-direction: column;
         top: 0;
         left: 0;
         width: 100%;
@@ -50,21 +50,53 @@
         box-sizing: border-box;
         padding: 0 20px 20px 20px;
         background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.50%);
-        .author {
-          color: #FFF;
-          font-family: 'Roboto', sans-serif;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
+        .header {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          box-sizing: border-box;
+          padding: 20px 20px 0 20px;
+          opacity: 0;
+          transition: 1s;
+          a {
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(224, 224, 224, 0.50);
+          }
+          a:hover {
+            background: #E0E0E0;
+          }
         }
-        .date {
-          color: #E0E0E0;
-          font-family: 'Roboto', sans-serif;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+        .footer {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          .author {
+            color: #FFF;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          .date {
+            color: #E0E0E0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .item:hover .text {
+      background: unset;
+    }
+    .item:hover {
+      .text {
+        .header {
+          opacity: 1;
         }
       }
     }
@@ -122,9 +154,9 @@
       }
       .text {
         display: flex;
-        align-items: flex-end;
         justify-content: space-between;
         position: absolute;
+        flex-direction: column;
         top: 0;
         left: 0;
         width: 100%;
@@ -133,21 +165,53 @@
         box-sizing: border-box;
         padding: 0 20px 20px 20px;
         background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.50%);
-        .author {
-          color: #FFF;
-          font-family: 'Roboto', sans-serif;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
+        .header {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          box-sizing: border-box;
+          padding: 20px 20px 0 20px;
+          opacity: 0;
+          transition: 1s;
+          a {
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(224, 224, 224, 0.50);
+          }
+          a:hover {
+            background: #E0E0E0;
+          }
         }
-        .date {
-          color: #E0E0E0;
-          font-family: 'Roboto', sans-serif;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+        .footer {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          .author {
+            color: #FFF;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          .date {
+            color: #E0E0E0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .item:hover .text {
+      background: unset;
+    }
+    .item:hover {
+      .text {
+        .header {
+          opacity: 1;
         }
       }
     }
@@ -172,6 +236,7 @@
   }
 }
 .people {
+  margin-bottom: 120px;
   h2 {
     color: #000;
     text-align: center;
@@ -187,7 +252,7 @@
   .items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 370px 370px 370px 370px 370px;
+    grid-template-rows: repeat(5, 370px);
     gap: 30px;
     grid-template-areas: "item-1 item-2 item-3"
                          "item-4 item-2 item-5"
@@ -207,9 +272,9 @@
       }
       .text {
         display: flex;
-        align-items: flex-end;
         justify-content: space-between;
         position: absolute;
+        flex-direction: column;
         top: 0;
         left: 0;
         width: 100%;
@@ -218,21 +283,53 @@
         box-sizing: border-box;
         padding: 0 20px 20px 20px;
         background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.50%);
-        .author {
-          color: #FFF;
-          font-family: 'Roboto', sans-serif;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
+        .header {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          box-sizing: border-box;
+          padding: 20px 20px 0 20px;
+          opacity: 0;
+          transition: 1s;
+          a {
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(224, 224, 224, 0.50);
+          }
+          a:hover {
+            background: #E0E0E0;
+          }
         }
-        .date {
-          color: #E0E0E0;
-          font-family: 'Roboto', sans-serif;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+        .footer {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          .author {
+            color: #FFF;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          .date {
+            color: #E0E0E0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .item:hover .text {
+      background: unset;
+    }
+    .item:hover {
+      .text {
+        .header {
+          opacity: 1;
         }
       }
     }
