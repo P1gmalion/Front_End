@@ -74,8 +74,8 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: -1;
     margin-top: 150px;
+    z-index: -2;
   }
   .sidebar {
     position: sticky;
@@ -114,12 +114,18 @@ main {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 40px;
+      .divider {
+        display: flex;
+        align-items: flex-end;
+        background-color: black;
+        width: 100px;
+        height: 8px;
+      }
       h2 {
         display: flex;
         align-items: flex-start;
         gap: 10px;
-        padding-top: 28px;
+        padding-top: 20px;
         color: #000;
         font-family: 'Francois One', sans-serif;
         font-size: 36px;
@@ -128,7 +134,6 @@ main {
         line-height: 48px;
         letter-spacing: 1.44px;
         text-transform: uppercase;
-        position: relative;
         span {
           color: #000;
           font-feature-settings: 'sup';
@@ -142,15 +147,8 @@ main {
           text-transform: none;
         }
       }
-      h2::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 100px;
-        height: 8px;
-        background-color: black;
-      }
       p {
+        margin-top: 40px;
         color: #000;
         font-family: 'PT Sans', sans-serif;
         font-size: 28px;
@@ -188,5 +186,4 @@ main {
       }
     }
   }
-
 }
