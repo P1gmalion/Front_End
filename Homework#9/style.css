@@ -73,6 +73,13 @@ main {
   align-items: flex-start;
   gap: 28px;
 }
+main img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  margin-top: 150px;
+}
 main .sidebar {
   position: sticky;
   top: 58px;
