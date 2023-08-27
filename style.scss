@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+.container {
+  width: 100%;
+  max-width: 290px;
+  margin: 50px auto;
+}
+body {
+  background-color: aliceblue;
+}
+main {
+  h2 {
+    color: #2b2b6b;
+    text-align: center;
+    font-family: 'Delius Unicase', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 5px;
+      list-style-image: url("img/list-icon.png");
+      li {
+        a {
+          text-decoration: unset;
+          color: #165ea4;
+          font-family: "Black Ops One", sans-serif;
+          font-size: 23px;
+        }
+        &:visited {
+          color: #165ea4;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
