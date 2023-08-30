@@ -7,33 +7,37 @@
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-<form action="#" method="post">
-    <h2>Create an Account</h2>
-    <div class="name">
-        <label>
-            First Name
-            <input type="text" name="first_name">
-        </label>
-        <label>
-            Last Name
-            <input type="text" name="last_name">
-        </label>
-    </div>
-    <div class="email">
-        <label>
-            E-mail
-            <input type="text" name="email">
-        </label>
-        <p>We'll never share your email with anyone else.</p>
-    </div>
-    <div class="gender">
-        <label>
-            <input type="radio" name="radio">Male
-        </label>
-        <label>
-            <input type="radio" name="radio">Female
-        </label>
-    </div>
-</form>
+<main>
+    <form class="account" action="#" method="post">
+        <h2>Create an Account</h2>
+        <div class="name">
+            <label>
+                First Name
+                <input type="text" name="first_name">
+            </label>
+            <label>
+                Last Name
+                <input type="text" name="last_name">
+            </label>
+        </div>
+        <div class="email">
+            <label>
+                E-mail
+                <input type="text" name="email">
+            </label>
+            <p>We'll never share your email with anyone else.</p>
+        </div>
+        <div class="gender">
+            <label class="box">Male
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="box">Female
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </form>
+</main>
 </body>
 </html>
