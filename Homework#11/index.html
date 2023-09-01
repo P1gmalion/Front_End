@@ -66,6 +66,60 @@
             <a href="#">Log In</a>
         </div>
     </form>
+    <form class="profile" action="#" method="post">
+        <h2>Profile</h2>
+        <div class="photo-cam-bin">
+            <img src="img/photo.png" alt="photo">
+            <div class="cam-bin-text">
+                <div class="cam-bin">
+                    <input type="text">
+                    <button type="reset"></button>
+                </div>
+                <p>Up to 1 MB (300x300 px)</p>
+            </div>
+        </div>
+        <div class="name-email">
+            <label>
+                Name
+                <input type="text" name="name">
+            </label>
+            <label>
+                E-mail
+                <input type="text" name="name">
+            </label>
+        </div>
+        <div class="country-city">
+            <div class="country">
+                <label>Country
+                    <div class="select-wrapper">
+                        <select>
+                            <option>Select</option>
+                            <option>Ukraine</option>
+                            <option>USA</option>
+                        </select>
+                        <img src="img/arrows-select.svg" alt="">
+                    </div>
+                </label>
+            </div>
+            <div class="city">
+                <label>
+                    City
+                    <input type="text" name="city">
+                </label>
+            </div>
+        </div>
+        <div class="zip-phone">
+            <label>
+                Zip Code
+                <input type="number">
+            </label>
+            <label>
+                Phone Number
+                <input type="number">
+            </label>
+        </div>
+        <button type="submit">Update</button>
+    </form>
 </main>
 </body>
 </html>

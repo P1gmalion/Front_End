@@ -23,13 +23,16 @@ main {
   padding: 55px 135px;
   justify-content: center;
   align-items: flex-start;
+  height: 85vh;
   gap: 30px;
+  background-color: #F7F7F7;
 }
 main .account {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 35px 34px 16px 34px;
+  background-color: white;
 }
 main .account h2 {
   color: #1C1C1C;
@@ -304,6 +307,217 @@ main .account .login a {
   line-height: 22px;
   letter-spacing: -0.1px;
   text-decoration: unset;
+}
+main .profile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 35px 35px 116px 35px;
+  background-color: white;
+}
+main .profile h2 {
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+}
+main .profile .photo-cam-bin {
+  display: flex;
+  align-items: center;
+}
+main .profile .photo-cam-bin .cam-bin-text {
+  margin-left: 20px;
+}
+main .profile .photo-cam-bin .cam-bin-text .cam-bin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 9px;
+}
+main .profile .photo-cam-bin .cam-bin-text .cam-bin input {
+  display: flex;
+  width: 132px;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+  color: #545454;
+  border: 1px solid #545454;
+  border-radius: 5px;
+  caret-color: transparent;
+  cursor: pointer;
+}
+main .profile .photo-cam-bin .cam-bin-text .cam-bin button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #545454;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .profile .photo-cam-bin .cam-bin-text p {
+  color: #969696;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+}
+main .profile .name-email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .profile .name-email label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #545454;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+main .profile .name-email label input {
+  padding-left: 10px;
+  display: flex;
+  width: 231px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  color: #545454;
+  border: 1px solid #545454;
+  border-radius: 5px;
+}
+main .profile .name-email label input:focus {
+  border: 1px solid #007BFF;
+}
+main .profile .country-city {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+main .profile .country-city .country {
+  display: flex;
+  align-items: center;
+}
+main .profile .country-city .country label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #545454;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+main .profile .country-city .country label select {
+  appearance: none;
+  padding-left: 10px;
+  display: flex;
+  width: 245px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  color: #545454;
+  border: 1px solid #545454;
+  border-radius: 5px;
+}
+main .profile .country-city .country label select:focus {
+  border: 1px solid #007BFF;
+}
+main .profile .country-city .city {
+  display: flex;
+  align-items: center;
+}
+main .profile .country-city .city label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #545454;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+main .profile .country-city .city label input {
+  padding-left: 10px;
+  display: flex;
+  width: 231px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  color: #545454;
+  border: 1px solid #545454;
+  border-radius: 5px;
+}
+main .profile .country-city .city label input:focus {
+  border: 1px solid #007BFF;
+}
+main .profile .zip-phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .profile .zip-phone label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #545454;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+main .profile .zip-phone label input {
+  padding-left: 10px;
+  display: flex;
+  width: 231px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  color: #545454;
+  border: 1px solid #545454;
+  border-radius: 5px;
+}
+main .profile .zip-phone label input:focus {
+  border: 1px solid #007BFF;
+}
+main .profile .zip-phone label input::-webkit-inner-spin-button, main .profile .zip-phone label input::-webkit-outer-spin-button, main .profile .zip-phone label input::-webkit-textfield-decoration-container, main .profile .zip-phone label input::-webkit-inner-spin-button, main .profile .zip-phone label input::-webkit-outer-spin-button, main .profile .zip-phone label input::-ms-clear {
+  display: none;
+}
+main .profile button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 38px;
+  padding: 8px 10px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  background-color: #007BFF;
+  border: 1px solid #007BFF;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
