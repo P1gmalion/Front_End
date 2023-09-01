@@ -1,23 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.box {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-}
-
-.select-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.select-wrapper img {
-  position: absolute;
-  right: 5px;
-}
-
 main {
   display: flex;
   padding: 55px 135px;
@@ -118,6 +101,12 @@ main .account .gender {
   align-items: center;
   gap: 21px;
 }
+main .account .gender .box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+}
 main .account .gender label {
   display: flex;
   justify-content: center;
@@ -186,7 +175,12 @@ main .account .country-city .country label {
   line-height: 22px;
   letter-spacing: -0.2px;
 }
-main .account .country-city .country label select {
+main .account .country-city .country label .select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main .account .country-city .country label .select-wrapper select {
   appearance: none;
   padding-left: 10px;
   display: flex;
@@ -198,8 +192,12 @@ main .account .country-city .country label select {
   border: 1px solid #545454;
   border-radius: 5px;
 }
-main .account .country-city .country label select:focus {
+main .account .country-city .country label .select-wrapper select:focus {
   border: 1px solid #007BFF;
+}
+main .account .country-city .country label .select-wrapper img {
+  position: absolute;
+  right: 5px;
 }
 main .account .country-city .city {
   display: flex;
@@ -337,7 +335,12 @@ main .profile .photo-cam-bin .cam-bin-text .cam-bin {
   gap: 10px;
   margin-bottom: 9px;
 }
-main .profile .photo-cam-bin .cam-bin-text .cam-bin input {
+main .profile .photo-cam-bin .cam-bin-text .cam-bin .camera-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main .profile .photo-cam-bin .cam-bin-text .cam-bin .camera-wrapper input {
   display: flex;
   width: 132px;
   height: 26px;
@@ -349,7 +352,17 @@ main .profile .photo-cam-bin .cam-bin-text .cam-bin input {
   caret-color: transparent;
   cursor: pointer;
 }
-main .profile .photo-cam-bin .cam-bin-text .cam-bin button {
+main .profile .photo-cam-bin .cam-bin-text .cam-bin .camera-wrapper img {
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+}
+main .profile .photo-cam-bin .cam-bin-text .cam-bin .bin-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main .profile .photo-cam-bin .cam-bin-text .cam-bin .bin-wrapper button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -358,6 +371,11 @@ main .profile .photo-cam-bin .cam-bin-text .cam-bin button {
   background-color: white;
   border: 1px solid #545454;
   border-radius: 5px;
+  cursor: pointer;
+}
+main .profile .photo-cam-bin .cam-bin-text .cam-bin .bin-wrapper img {
+  position: absolute;
+  right: 7px;
   cursor: pointer;
 }
 main .profile .photo-cam-bin .cam-bin-text p {
@@ -421,7 +439,12 @@ main .profile .country-city .country label {
   line-height: 22px;
   letter-spacing: -0.2px;
 }
-main .profile .country-city .country label select {
+main .profile .country-city .country label .select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main .profile .country-city .country label .select-wrapper select {
   appearance: none;
   padding-left: 10px;
   display: flex;
@@ -433,8 +456,12 @@ main .profile .country-city .country label select {
   border: 1px solid #545454;
   border-radius: 5px;
 }
-main .profile .country-city .country label select:focus {
+main .profile .country-city .country label .select-wrapper select:focus {
   border: 1px solid #007BFF;
+}
+main .profile .country-city .country label .select-wrapper img {
+  position: absolute;
+  right: 5px;
 }
 main .profile .country-city .city {
   display: flex;
