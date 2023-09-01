@@ -524,8 +524,9 @@ main .profile .zip-phone label input {
 main .profile .zip-phone label input:focus {
   border: 1px solid #007BFF;
 }
-main .profile .zip-phone label input::-webkit-inner-spin-button, main .profile .zip-phone label input::-webkit-outer-spin-button, main .profile .zip-phone label input::-webkit-textfield-decoration-container, main .profile .zip-phone label input::-webkit-inner-spin-button, main .profile .zip-phone label input::-webkit-outer-spin-button, main .profile .zip-phone label input::-ms-clear {
-  display: none;
+main .profile .zip-phone label input::-webkit-outer-spin-button, main .profile .zip-phone label input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
 }
 main .profile button {
   display: flex;

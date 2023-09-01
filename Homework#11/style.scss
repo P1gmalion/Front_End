@@ -519,13 +519,10 @@ main {
           &:focus {
             border: 1px solid #007BFF;
           }
-          &::-webkit-inner-spin-button,
           &::-webkit-outer-spin-button,
-          &::-webkit-textfield-decoration-container,
-          &::-webkit-inner-spin-button,
-          &::-webkit-outer-spin-button,
-          &::-ms-clear {
-            display: none;
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
           }
         }
       }
