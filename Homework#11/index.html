@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web-Forms</title>
+    <link href="./reset.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <form class="account" action="#" method="post">
+        <h2>Create an Account</h2>
+        <div class="name">
+            <label>
+                First Name
+                <input type="text" name="first_name">
+            </label>
+            <label>
+                Last Name
+                <input type="text" name="last_name">
+            </label>
+        </div>
+        <div class="email">
+            <label>
+                E-mail
+                <input type="text" name="email">
+            </label>
+            <p>We'll never share your email with anyone else.</p>
+        </div>
+        <div class="gender">
+            <label class="box">Male
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="box">Female
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="country-city">
+            <div class="country">
+                <label>Country
+                    <div class="select-wrapper">
+                        <select>
+                            <option>Select</option>
+                            <option>Ukraine</option>
+                            <option>USA</option>
+                        </select>
+                        <img src="img/arrows-select.svg" alt="">
+                    </div>
+                </label>
+            </div>
+            <div class="city">
+                <label>
+                    City
+                    <input type="text" name="city">
+                </label>
+            </div>
+        </div>
+        <div class="button-and-text">
+            <button>Sign Up</button>
+            <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#" class="agreement">Terms of Use</a> and <a href="#" class="agreement">Privacy Policy</a></p>
+        </div>
+        <div class="login">
+            <p>Have an account?</p>
+            <a href="#">Log In</a>
+        </div>
+    </form>
+    <form class="profile" action="#" method="post">
+        <h2>Profile</h2>
+        <div class="photo-cam-bin">
+            <img src="img/photo.png" alt="photo">
+            <div class="cam-bin-text">
+                <div class="cam-bin">
+                    <div class="camera-wrapper">
+                        <input type="text">
+                        <img src="img/camera.svg" alt="">
+                    </div>
+                    <div class="bin-wrapper">
+                        <button type="reset"></button>
+                        <img src="img/bin.svg" alt="">
+                    </div>
+                </div>
+                <p>Up to 1 MB (300x300 px)</p>
+            </div>
+        </div>
+        <div class="name-email">
+            <label>
+                Name
+                <input type="text" name="name">
+            </label>
+            <label>
+                E-mail
+                <input type="text" name="name">
+            </label>
+        </div>
+        <div class="country-city">
+            <div class="country">
+                <label>Country
+                    <div class="select-wrapper">
+                        <select>
+                            <option>Select</option>
+                            <option>Ukraine</option>
+                            <option>USA</option>
+                        </select>
+                        <img src="img/arrows-select.svg" alt="">
+                    </div>
+                </label>
+            </div>
+            <div class="city">
+                <label>
+                    City
+                    <input type="text" name="city">
+                </label>
+            </div>
+        </div>
+        <div class="zip-phone">
+            <label>
+                Zip Code
+                <input type="number">
+            </label>
+            <label>
+                Phone Number
+                <input type="number">
+            </label>
+        </div>
+        <button type="submit">Update</button>
+    </form>
+</main>
+</body>
+</html>
