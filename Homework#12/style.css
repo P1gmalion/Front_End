@@ -61,14 +61,6 @@ header nav ul li a:hover {
   color: #070707;
 }
 
-@media (min-width: 768px) {
-  header {
-    height: auto;
-  }
-  header nav ul {
-    flex-direction: column;
-  }
-}
 main .first-screen {
   display: flex;
   flex-direction: column;
@@ -82,11 +74,6 @@ main .first-screen h2 {
   font-weight: 700;
   line-height: normal;
   margin-bottom: 50px;
-}
-main .first-screen img {
-  max-width: 970px;
-  width: 100%;
-  height: auto;
 }
 main .about-me {
   display: flex;
@@ -187,17 +174,6 @@ main .portfolio .portfolio-items p a {
   text-decoration-line: underline;
 }
 
-@media (max-width: 768px) {
-  main .first-screen img {
-    width: 90%;
-    margin: 0 auto;
-  }
-  img {
-    max-width: 700px;
-    width: 100%;
-    height: auto;
-  }
-}
 footer {
   display: flex;
   flex-direction: column;
@@ -257,6 +233,19 @@ footer p {
   line-height: normal;
   max-width: 200px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto !important;
+  }
+  header nav ul {
+    flex-direction: column !important;
+  }
+  main .first-screen img {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
