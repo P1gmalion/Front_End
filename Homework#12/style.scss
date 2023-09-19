@@ -75,6 +75,11 @@ main {
       line-height: normal;
       margin-bottom: 50px;
     }
+    img {
+      max-width: 970px;
+      width: 100%;
+      height: auto;
+    }
   }
   .about-me {
     display: flex;
@@ -154,6 +159,11 @@ main {
       flex-direction: column;
       align-items: center;
       margin-bottom: 70px;
+      img {
+        max-width: 970px;
+        width: 100%;
+        height: auto;
+      }
       .paragraph-one {
         max-width: 200px;
         width: 100%;
@@ -233,15 +243,24 @@ footer {
     line-height: normal;
     max-width: 200px;
     width: 100%;
-
   }
 }
 @media (max-width: 768px) {
   header {
-    height: auto !important;
+    height: auto;
     nav {
       ul {
-        flex-direction: column !important;
+        flex-direction: column;
+      }
+    }
+  }
+  main {
+    .skills {
+      .items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
       }
     }
   }
