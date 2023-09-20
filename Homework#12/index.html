@@ -83,5 +83,15 @@
     </div>
     <p>Like me on<br /> LinkedIn, Instagram, Behance, Dribble</p>
 </footer>
+<script>
+    let burgerMenu = document.querySelector('.burger-menu');
+    let header = document.querySelector('header');
+    let menu = document.querySelector('nav');
+    burgerMenu.addEventListener('click', function () {
+        menu.classList.toggle('active');
+        header.classList.toggle('active');
+        burgerMenu.classList.toggle('active');
+    })
+</script>
 </body>
 </html>

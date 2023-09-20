@@ -7,6 +7,7 @@
   max-width: 970px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .heading {
@@ -59,6 +60,20 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: #070707;
+}
+header .burger-menu {
+  display: none;
+  width: 35px;
+  height: 25px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+header .burger-menu span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: grey;
 }
 
 main .first-screen {
@@ -257,6 +272,34 @@ footer p {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 645px) {
+  header {
+    height: 80px;
+    justify-content: flex-end;
+  }
+  header.active {
+    height: auto;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+  }
+  header nav {
+    display: none;
+  }
+  header nav.active {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header .burger-menu {
+    display: flex;
+  }
+  header .burger-menu.active {
+    margin-top: 27px;
   }
 }
 
