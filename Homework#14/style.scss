@@ -28,6 +28,11 @@
     letter-spacing: 0.95px;
   }
 }
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 header {
   display: flex;
   align-items: center;
@@ -74,11 +79,6 @@ main {
     }
   }
   .second-screen {
-    img {
-      max-width: 1170px;
-      width: 100%;
-      height: auto;
-    }
     p {
       max-width: 1170px;
       width: 100%;
@@ -168,5 +168,32 @@ footer {
     line-height: 166%;
     letter-spacing: 1.2px;
     margin-top: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 50px 0;
+    .footer-wrapper {
+      align-items: center;
+      flex-direction: column;
+      .cta {
+        align-items: center;
+        h2 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        p {
+          margin-top: 0;
+          margin-bottom: 15px;
+        }
+      }
+      .socials {
+        margin: 30px 0 40px 0;
+      }
+    }
+    p {
+      margin-top: 0;
+    }
   }
 }

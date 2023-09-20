@@ -30,6 +30,12 @@
   letter-spacing: 0.95px;
 }
 
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -72,11 +78,6 @@ main .first-screen p {
   max-width: 1170px;
   width: 100%;
   margin-top: 20px;
-}
-main .second-screen img {
-  max-width: 1170px;
-  width: 100%;
-  height: auto;
 }
 main .second-screen p {
   max-width: 1170px;
@@ -159,6 +160,34 @@ footer p {
   line-height: 166%;
   letter-spacing: 1.2px;
   margin-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 50px 0;
+  }
+  footer .footer-wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .footer-wrapper .cta {
+    align-items: center;
+  }
+  footer .footer-wrapper .cta h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer .footer-wrapper .cta p {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  footer .footer-wrapper .socials {
+    margin: 30px 0 40px 0;
+  }
+  footer p {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
