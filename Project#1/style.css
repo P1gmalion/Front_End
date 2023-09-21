@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper-book {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 44px 32px;
+  background-color: rgba(35, 35, 35, 0.9);
+  max-width: 648px;
+  width: 100%;
+}
+.wrapper-book h2 {
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+.wrapper-book h3 {
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 16px 0;
+}
+.wrapper-book p {
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 1.6px;
+  max-width: 584px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.wrapper-book button {
+  color: #FFF;
+  text-align: center;
+  font-family: "Aleo", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+  background: #5373FD;
+  border: unset;
+  padding: 20px 56px;
+}
+
+.welcome-screen {
+  background-image: url("img/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome-screen .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-screen .container h2 {
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  text-transform: uppercase;
+  margin-top: 295px;
+}
+.welcome-screen .container h3 {
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 6.82px;
+  margin: 8px 0 48px 0;
+}
+.welcome-screen .container form {
+  display: flex;
+  align-items: center;
+  max-width: 647px;
+  width: 100%;
+}
+.welcome-screen .container form label {
+  display: flex;
+  align-items: center;
+  max-width: 647px;
+  width: 100%;
+}
+.welcome-screen .container form label input {
+  max-width: 647px;
+  width: 100%;
+  color: #999;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2.8px;
+  padding-left: 36px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border: none;
+}
+.welcome-screen .container .scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.welcome-screen .container .scroll-down p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2.8px;
+  margin-top: 211px;
+  margin-bottom: 4px;
+}
+.welcome-screen .container .scroll-down svg {
+  width: 14px;
+  height: 16px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #5373FD;
+}
+header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+}
+header .navigation a {
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  text-decoration: unset;
+}
+header .navigation nav ul {
+  display: flex;
+  gap: 40px;
+}
+header .navigation nav ul li a {
+  color: #FFF;
+  font-family: "Aleo", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.why-us {
+  background-image: url("img/why-us-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.why-us .container {
+  padding: 124px 112px 124px 0;
+}
+.why-us .container .wrapper-why-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1208px;
+  width: 100%;
+}
+.why-us .container .wrapper-why-us .content h2 {
+  color: #FFF;
+  font-family: "Aleo", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+.why-us .container .wrapper-why-us .content p {
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 1.6px;
+  max-width: 648px;
+  width: 100%;
+  margin: 24px 0 32px 0;
+}
+.why-us .container .wrapper-why-us .content button {
+  background: #5373FD;
+  color: #FFF;
+  text-align: center;
+  font-family: "Aleo", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+  padding: 20px 32px;
+  border: unset;
+}
+.why-us .container .wrapper-why-us .images {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.why-us .container .wrapper-why-us .images img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  min-width: 170px;
+}
+.why-us .container .wrapper-why-us .images .first-img {
+  margin-right: 74px;
+}
+.why-us .container .wrapper-why-us .images .second-img {
+  margin-left: 74px;
+}
+
+.steps {
+  background-color: #333;
+}
+.steps .container .items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1320px;
+  width: 100%;
+  padding: 99px 0 59px 0;
+}
+.steps .container .items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 424px;
+  width: 100%;
+}
+.steps .container .items .item .svg-wrapper {
+  width: 96px;
+  height: 96px;
+  border-radius: 48px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps .container .items .item .svg-wrapper svg {
+  width: 64px;
+  height: 64px;
+}
+.steps .container .items .item .svg-wrapper .search {
+  --social_icon_color: #5373FD;
+}
+.steps .container .items .item p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Aleo", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+.steps .container .items .second {
+  padding-bottom: 9px;
+}
+
+.first-book-now {
+  background-image: url("img/book-first-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first-book-now .container {
+  padding: 220px 0 120px 0;
+}
+
+.second-book-now {
+  background-image: url("img/book-second-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.second-book-now .container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 220px 0 120px 0;
+}
+
+.feedback {
+  background-image: url("img/feedback-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feedback .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback .container h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Aleo", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin: 120px 0 60px 0;
+}
+.feedback .container .review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 180px;
+}
+.feedback .container .review .user-feedback {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 65px 48px 60px;
+  background-color: #333;
+  max-width: 885px;
+  width: 100%;
+}
+.feedback .container .review .user-feedback h3 {
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.feedback .container .review .user-feedback p {
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 1.6px;
+  max-width: 760px;
+  width: 100%;
+}
+.feedback .container .review .user-feedback p svg {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
+}
+
+footer {
+  background-color: black;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+}
+footer .container .closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container .closing h2 {
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+footer .container .closing p {
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2.8px;
+  margin: 8px 0 20px 0;
+}
+footer .container .socials nav ul {
+  display: flex;
+  gap: 32px;
+}
+footer .container .socials nav svg {
+  height: 32px;
+  --social_icon_color_white: white;
+}
+footer .container .socials nav svg:hover {
+  --social_icon_color_white: #5373FD;
+}
+footer .container .socials nav .facebook {
+  width: 20px;
+}
+footer .container .socials nav .twitter {
+  width: 32px;
+}
+footer .container .socials nav .linkedin {
+  width: 28px;
+}
+footer .container .socials nav .youtube {
+  width: 36px;
+}
+footer .container .socials nav .pinterest {
+  width: 31px;
+}
+
+/*# sourceMappingURL=style.css.map */
