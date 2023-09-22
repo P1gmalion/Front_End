@@ -101,7 +101,6 @@
         display: flex;
         align-items: center;
         max-width: 647px;
-        min-width: 470px;
         width: 100%;
         input {
           max-width: 647px;
@@ -271,7 +270,7 @@ header {
           max-width: 350px;
           width: 100%;
           height: auto;
-          min-width: 170px;
+          min-width: 270px;
         }
         .first-img {
           margin-right: 74px;
@@ -392,6 +391,12 @@ header {
       justify-content: center;
       align-items: center;
       margin-bottom: 180px;
+      img {
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+        min-width: 270px;
+      }
       .user-feedback {
         display: flex;
         flex-direction: column;
@@ -490,6 +495,184 @@ footer {
           width: 31px;
         }
       }
+    }
+  }
+}
+@media  (max-width: 899px) {
+  .feedback {
+    .container {
+      .review {
+        flex-direction: column;
+        img {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .why-us {
+    .container {
+      padding: 124px 0;
+      .wrapper-why-us {
+        gap: 10px;
+        .images {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 16px;
+          img {
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+          }
+          .first-img {
+            margin-right: 0;
+          }
+          .second-img {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .feedback {
+    .container {
+      h2 {
+        font-size: 32px;
+      }
+    }
+  }
+}
+@media (max-width: 597px) {
+  footer {
+    .container {
+      .closing {
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+      .socials {
+        nav {
+          ul {
+            gap: 28px;
+          }
+          svg {
+            height: 28px;
+            --social_icon_color_white: white;
+            &:hover {
+              --social_icon_color_white: #5373FD;
+            }
+          }
+          .facebook {
+            width: 16px;
+          }
+          .twitter {
+            width: 28px;
+          }
+          .linkedin {
+            width: 24px;
+          }
+          .youtube {
+            width: 32px;
+          }
+          .pinterest {
+            width: 27px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 470px) {
+  .welcome-screen {
+    .container {
+      h2 {
+        font-size: 40px;
+      }
+      h3  {
+        font-size: 14px;
+      }
+      form {
+        label {
+          input {
+            font-size: 10px;
+            padding-left: 10px;
+          }
+          a {
+            button {
+              p {
+                display: none;
+              }
+            }
+          }
+        }
+
+      }
+      .scroll-down {
+        p {
+          font-size: 12px;
+          svg {
+            width: 12px;
+            height: 14px;
+          }
+        }
+      }
+    }
+  }
+  .why-us {
+    .container {
+      padding: 124px 0;
+      .wrapper-why-us {
+        gap: 10px;
+        .content {
+          h2 {
+            font-size: 28px;
+          }
+          p {
+            font-size: 12px;
+          }
+          button {
+            font-size: 12px;
+            padding: 16px 28px;
+          }
+        }
+        .images {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 16px;
+          img {
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+          }
+          .first-img {
+            margin-right: 0;
+          }
+          .second-img {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .wrapper-book {
+    h2 {
+      font-size: 16px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+    button {
+      font-size: 14px;
+      padding: 15px 30px;
     }
   }
 }
