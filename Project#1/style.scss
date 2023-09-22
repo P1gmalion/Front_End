@@ -270,7 +270,7 @@ header {
           max-width: 350px;
           width: 100%;
           height: auto;
-          min-width: 270px;
+          //min-width: 215px;
         }
         .first-img {
           margin-right: 74px;
@@ -289,6 +289,8 @@ header {
     flex-direction: column;
     align-items: center;
     .wrapper-svg {
+      display: flex;
+      align-items: center;
       z-index: 1;
       max-width: 872px;
       width: 100%;
@@ -392,10 +394,9 @@ header {
       align-items: center;
       margin-bottom: 180px;
       img {
-        max-width: 350px;
+        max-width: 440px;
         width: 100%;
         height: auto;
-        min-width: 270px;
       }
       .user-feedback {
         display: flex;
@@ -498,7 +499,33 @@ footer {
     }
   }
 }
-@media  (max-width: 899px) {
+@media (max-width: 1140px) {
+  .steps {
+    .container {
+      .wrapper-svg {
+        max-width: 680px;
+      }
+    }
+  }
+}
+@media (max-width: 899px) {
+  .steps {
+    .container {
+      .wrapper-svg {
+        display: none;
+      }
+      .items {
+        .item {
+          .svg-wrapper {
+            width: 55px;
+          }
+          p {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
   .feedback {
     .container {
       .review {
@@ -511,6 +538,19 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  header {
+    .navigation {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      nav {
+        ul {
+          display: flex;
+          gap: 40px;
+        }
+      }
+    }
+  }
   .why-us {
     .container {
       padding: 124px 0;
@@ -545,6 +585,36 @@ footer {
   }
 }
 @media (max-width: 597px) {
+  header {
+    .navigation {
+      a {
+        font-size: 17px;
+      }
+      nav {
+        ul {
+          gap: 30px;
+          li {
+            a {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .steps {
+    .container {
+      .items {
+        flex-direction: column;
+        justify-content: center;
+        padding: 59px 0;
+        gap: 15px;
+        .second {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
   footer {
     .container {
       .closing {
@@ -588,6 +658,17 @@ footer {
   }
 }
 @media (max-width: 470px) {
+  header {
+    .navigation {
+      padding: 24px 0;
+      nav {
+        ul {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    }
+  }
   .welcome-screen {
     .container {
       h2 {
@@ -637,7 +718,7 @@ footer {
           }
           button {
             font-size: 12px;
-            padding: 16px 28px;
+            padding: 10px 18px;
           }
         }
         .images {
@@ -660,6 +741,20 @@ footer {
       }
     }
   }
+  .steps {
+    .container {
+      .items {
+        .item {
+          .svg-wrapper {
+            width: 45px;
+          }
+          p {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
   .wrapper-book {
     h2 {
       font-size: 16px;
@@ -673,6 +768,37 @@ footer {
     button {
       font-size: 14px;
       padding: 15px 30px;
+    }
+  }
+}
+@media (max-width: 283px) {
+  .feedback {
+    .container {
+      .review {
+        .user-feedback {
+          padding: 48px 0 48px 0;
+        }
+      }
+    }
+  }
+  footer {
+    .container {
+      .closing {
+        h2 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 11px;
+        }
+      }
+      .socials {
+        nav {
+          ul {
+            flex-direction: column;
+            gap: 18px;
+          }
+        }
+      }
     }
   }
 }

@@ -272,7 +272,6 @@ header .navigation nav ul li a {
   max-width: 350px;
   width: 100%;
   height: auto;
-  min-width: 270px;
 }
 .why-us .container .wrapper-why-us .images .first-img {
   margin-right: 74px;
@@ -290,6 +289,8 @@ header .navigation nav ul li a {
   align-items: center;
 }
 .steps .container .wrapper-svg {
+  display: flex;
+  align-items: center;
   z-index: 1;
   max-width: 872px;
   width: 100%;
@@ -396,10 +397,9 @@ header .navigation nav ul li a {
   margin-bottom: 180px;
 }
 .feedback .container .review img {
-  max-width: 350px;
+  max-width: 440px;
   width: 100%;
   height: auto;
-  min-width: 270px;
 }
 .feedback .container .review .user-feedback {
   display: flex;
@@ -497,7 +497,21 @@ footer .container .socials nav .pinterest {
   width: 31px;
 }
 
+@media (max-width: 1140px) {
+  .steps .container .wrapper-svg {
+    max-width: 680px;
+  }
+}
 @media (max-width: 899px) {
+  .steps .container .wrapper-svg {
+    display: none;
+  }
+  .steps .container .items .item .svg-wrapper {
+    width: 55px;
+  }
+  .steps .container .items .item p {
+    font-size: 30px;
+  }
   .feedback .container .review {
     flex-direction: column;
   }
@@ -506,6 +520,15 @@ footer .container .socials nav .pinterest {
   }
 }
 @media (max-width: 768px) {
+  header .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  header .navigation nav ul {
+    display: flex;
+    gap: 40px;
+  }
   .why-us .container {
     padding: 124px 0;
   }
@@ -534,6 +557,24 @@ footer .container .socials nav .pinterest {
   }
 }
 @media (max-width: 597px) {
+  header .navigation a {
+    font-size: 17px;
+  }
+  header .navigation nav ul {
+    gap: 30px;
+  }
+  header .navigation nav ul li a {
+    font-size: 11px;
+  }
+  .steps .container .items {
+    flex-direction: column;
+    justify-content: center;
+    padding: 59px 0;
+    gap: 15px;
+  }
+  .steps .container .items .second {
+    padding-bottom: 0;
+  }
   footer .container .closing h2 {
     font-size: 20px;
   }
@@ -567,6 +608,13 @@ footer .container .socials nav .pinterest {
   }
 }
 @media (max-width: 470px) {
+  header .navigation {
+    padding: 24px 0;
+  }
+  header .navigation nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
   .welcome-screen .container h2 {
     font-size: 40px;
   }
@@ -601,7 +649,7 @@ footer .container .socials nav .pinterest {
   }
   .why-us .container .wrapper-why-us .content button {
     font-size: 12px;
-    padding: 16px 28px;
+    padding: 10px 18px;
   }
   .why-us .container .wrapper-why-us .images {
     display: flex;
@@ -620,6 +668,12 @@ footer .container .socials nav .pinterest {
   .why-us .container .wrapper-why-us .images .second-img {
     margin-left: 0;
   }
+  .steps .container .items .item .svg-wrapper {
+    width: 45px;
+  }
+  .steps .container .items .item p {
+    font-size: 24px;
+  }
   .wrapper-book h2 {
     font-size: 16px;
   }
@@ -632,6 +686,21 @@ footer .container .socials nav .pinterest {
   .wrapper-book button {
     font-size: 14px;
     padding: 15px 30px;
+  }
+}
+@media (max-width: 283px) {
+  .feedback .container .review .user-feedback {
+    padding: 48px 0 48px 0;
+  }
+  footer .container .closing h2 {
+    font-size: 16px;
+  }
+  footer .container .closing p {
+    font-size: 11px;
+  }
+  footer .container .socials nav ul {
+    flex-direction: column;
+    gap: 18px;
   }
 }
 
