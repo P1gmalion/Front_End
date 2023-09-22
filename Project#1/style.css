@@ -103,9 +103,11 @@
   width: 100%;
 }
 .welcome-screen .container form label {
+  position: relative;
   display: flex;
   align-items: center;
   max-width: 647px;
+  min-width: 470px;
   width: 100%;
 }
 .welcome-screen .container form label input {
@@ -122,6 +124,35 @@
   padding-bottom: 20px;
   padding-top: 20px;
   border: none;
+}
+.welcome-screen .container form label a {
+  position: absolute;
+  right: 5px;
+  text-decoration: unset;
+}
+.welcome-screen .container form label a button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5373FD;
+  border: unset;
+  gap: 12px;
+  padding: 16px 24px;
+}
+.welcome-screen .container form label a button svg {
+  --social_icon_color: white;
+  width: 16px;
+  height: 16px;
+}
+.welcome-screen .container form label a button p {
+  color: #FFF;
+  font-family: "Aleo", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 .welcome-screen .container .scroll-down {
   display: flex;
@@ -254,6 +285,24 @@ header .navigation nav ul li a {
 .steps {
   background-color: #333;
 }
+.steps .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.steps .container .wrapper-svg {
+  z-index: 1;
+  max-width: 872px;
+  width: 100%;
+  max-height: 90px;
+  margin-top: 60px;
+  margin-bottom: -147px;
+}
+.steps .container .wrapper-svg svg {
+  max-width: 872px;
+  width: 100%;
+  height: 90px;
+}
 .steps .container .items {
   display: flex;
   align-items: center;
@@ -261,6 +310,7 @@ header .navigation nav ul li a {
   max-width: 1320px;
   width: 100%;
   padding: 99px 0 59px 0;
+  z-index: 2;
 }
 .steps .container .items .item {
   display: flex;
