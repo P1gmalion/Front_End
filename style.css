@@ -44,5 +44,8 @@ main nav ul li:visited {
   color: #165ea4;
   text-decoration: none;
 }
+main nav ul li .project {
+  color: #a21227;
+}
 
 /*# sourceMappingURL=style.css.map */
