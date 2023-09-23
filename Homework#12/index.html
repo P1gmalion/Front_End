@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Denis Novik</title>
+    <link href="./reset.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class="container">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+    <div class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+<main>
+    <section class="first-screen container">
+        <h2>Denis Novik</h2>
+        <img src="img/portrait.png" alt="portrait">
+    </section>
+    <section class="about-me">
+        <h2>About me</h2>
+        <div class="about-me__info">
+            <p class="first-paragraph">Hi, I'm Denis – UX/UI designer from Minsk.<br />I'm interested in design and everything connected with it.</p>
+            <p class="second-paragraph">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+            <p class="third-paragraph">Ready to implement excellent projects with wonderful people.</p>
+        </div>
+    </section>
+    <section class="skills container">
+        <div class="heading">
+            <h2>Skills</h2>
+            <p>I work in such programs as</p>
+        </div>
+        <div class="items">
+            <img src="img/ps.png" alt="photoshop">
+            <img src="img/ai.png" alt="adobe-illustrator">
+            <img src="img/af.png" alt="after-effect">
+            <img src="img/figma.png" alt="figma">
+        </div>
+    </section>
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-items">
+            <img src="img/fashion_store.png" alt="fashion-store">
+            <p class="paragraph-one"><a href="#">Online fashion store - Homepage</a></p>
+        </div>
+        <div class="portfolio-items">
+            <img src="img/reebok.png" alt="reebok">
+            <p><a href="#">Reebok Store - Concept</a></p>
+        </div>
+        <div class="portfolio-items">
+            <img src="img/braun.png" alt="braun">
+            <p><a href="#">Braun Landing Page - Concept</a></p>
+        </div>
+    </section>
+</main>
+<footer class="container">
+    <div class="heading">
+        <h2>Contacts</h2>
+        <p class="paragraph-two">Want to know more or just chat? You are welcome!</p>
+    </div>
+    <div class="socials">
+        <button>Send message</button>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="img/linkedin.png" alt="linkedin"></a></li>
+                <li><a href="#"><img src="img/instagram.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="img/behance.png" alt="behance"></a></li>
+                <li><a href="#"><img src="img/dribbble.png" alt="dribble"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <p>Like me on<br /> LinkedIn, Instagram, Behance, Dribble</p>
+</footer>
+<script>
+    let burgerMenu = document.querySelector('.burger-menu');
+    let header = document.querySelector('header');
+    let menu = document.querySelector('nav');
+    burgerMenu.addEventListener('click', function () {
+        menu.classList.toggle('active');
+        header.classList.toggle('active');
+        burgerMenu.classList.toggle('active');
+    })
+</script>
+</body>
+</html>
