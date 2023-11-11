@@ -39,3 +39,14 @@ window.addEventListener('scroll', function () {
     });
 })
 
+const swiper = new Swiper('.swiper', {
+    direction: 'vertical',
+    loop: true,
+    mousewheel: {
+        releaseOnEdges: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
