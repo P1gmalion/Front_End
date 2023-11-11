@@ -93,6 +93,7 @@ header .socials nav ul li .facebook {
 }
 
 #about-us {
+  position: relative;
   margin-top: -54px;
   height: 100vh;
   width: 100%;
@@ -102,6 +103,7 @@ header .socials nav ul li .facebook {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 #about-us .swiper {
   max-width: 1350px;
@@ -146,6 +148,13 @@ header .socials nav ul li .facebook {
 }
 #about-us .swiper .swiper-pagination-bullet-active {
   background-color: #fff;
+}
+#about-us a img {
+  position: absolute;
+  bottom: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 16px 15px;
 }
 
 #projects, #news, #contact {
