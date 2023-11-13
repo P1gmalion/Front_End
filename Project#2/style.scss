@@ -86,7 +86,7 @@ header {
 .header__sticky {
   position: fixed;
   top: 0;
-  left: 0%;
+  left: 0;
   max-width: 5000px;
   width: 100%;
   margin: 0 auto;
@@ -164,6 +164,7 @@ header {
 
 }
 #projects {
+  padding-top: 130px;
   margin-bottom: 150px;
   h2 {
     display: flex;
@@ -177,8 +178,7 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 90px;
-    margin-top: 130px;
+    margin-bottom: 135px;
     &:before {
       content: '';
       display: block;
@@ -188,26 +188,7 @@ header {
     }
   }
   .projects-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 200px;
     .first-project, .second-project {
-      //.background-project-1, .background-project-2 {
-      //  max-width: 585px;
-      //  width: 100%;
-      //  height: 470px;
-      //}
-      //.background-project-1{
-      //  margin-left: -115px;
-      //  background-color: #55B7FF;
-      //}
-      //.background-project-2 {
-      //  margin-top: -530px;
-      //  margin-left: 800px;
-      //  background-color: #7E5AFF;
-      //}
       .project-1, .project-2 {
         display: flex;
         align-items: center;
@@ -275,6 +256,37 @@ header {
               line-height: normal;
             }
           }
+        }
+      }
+    }
+    .first-project {
+      .project-1-wrapper {
+        position: relative;
+        margin-bottom: 200px;
+        .background-project-1 {
+          position: absolute;
+          left: -115px;
+          top: -45px;
+          background: #55B7FF;
+          max-width: 585px;
+          width: 100%;
+          height: 470px;
+          z-index: -1;
+        }
+      }
+    }
+    .second-project {
+      .project-2-wrapper {
+        position: relative;
+        .background-project-2 {
+          position: absolute;
+          right: -115px;
+          top: -45px;
+          background: #7E5AFF;
+          max-width: 585px;
+          width: 100%;
+          height: 470px;
+          z-index: -1;
         }
       }
     }
