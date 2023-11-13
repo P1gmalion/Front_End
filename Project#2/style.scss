@@ -227,13 +227,14 @@ header {
             width: 100%;
             margin: 19px 0 40px 0;
           }
-          button {
+          a {
             color: #000;
             font-family: "Montserrat", sans-serif;
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            text-decoration: unset;
             border: 1px solid #2C4058;
             background-color: white;
             padding: 16px 41px 17px 41px;
