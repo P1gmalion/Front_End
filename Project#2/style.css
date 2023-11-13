@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -157,12 +158,108 @@ header .socials nav ul li .facebook {
   padding: 16px 15px;
 }
 
-#projects, #news, #contact {
-  height: 800px;
+#projects {
+  margin-bottom: 150px;
+}
+#projects h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #2C4058;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 90px;
+  margin-top: 130px;
+}
+#projects h2:before {
+  content: "";
+  display: block;
+  width: 100px;
+  border: solid 1px black;
+  margin-bottom: 30px;
+}
+#projects .projects-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 200px;
+}
+#projects .projects-wrapper .first-project .project-1, #projects .projects-wrapper .first-project .project-2, #projects .projects-wrapper .second-project .project-1, #projects .projects-wrapper .second-project .project-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+#projects .projects-wrapper .first-project .project-1 img, #projects .projects-wrapper .first-project .project-2 img, #projects .projects-wrapper .second-project .project-1 img, #projects .projects-wrapper .second-project .project-2 img {
+  max-width: 585px;
+  width: 100%;
+  height: 470px;
+}
+#projects .projects-wrapper .first-project .project-1 .content p, #projects .projects-wrapper .first-project .project-2 .content p, #projects .projects-wrapper .second-project .project-1 .content p, #projects .projects-wrapper .second-project .project-2 .content p {
+  color: #2C4058;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#projects .projects-wrapper .first-project .project-1 .content h3, #projects .projects-wrapper .first-project .project-2 .content h3, #projects .projects-wrapper .second-project .project-1 .content h3, #projects .projects-wrapper .second-project .project-2 .content h3 {
+  color: #2C4058;
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#projects .projects-wrapper .first-project .project-1 .content .paragraph, #projects .projects-wrapper .first-project .project-2 .content .paragraph, #projects .projects-wrapper .second-project .project-1 .content .paragraph, #projects .projects-wrapper .second-project .project-2 .content .paragraph {
+  color: #2C4058;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 470px;
+  width: 100%;
+  margin: 19px 0 40px 0;
+}
+#projects .projects-wrapper .first-project .project-1 .content button, #projects .projects-wrapper .first-project .project-2 .content button, #projects .projects-wrapper .second-project .project-1 .content button, #projects .projects-wrapper .second-project .project-2 .content button {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid #2C4058;
+  background-color: white;
+  padding: 16px 41px 17px 41px;
+}
+#projects .projects-wrapper .first-project .project-1 .content .mark, #projects .projects-wrapper .first-project .project-2 .content .mark, #projects .projects-wrapper .second-project .project-1 .content .mark, #projects .projects-wrapper .second-project .project-2 .content .mark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 60px;
+}
+#projects .projects-wrapper .first-project .project-1 .content .mark img, #projects .projects-wrapper .first-project .project-2 .content .mark img, #projects .projects-wrapper .second-project .project-1 .content .mark img, #projects .projects-wrapper .second-project .project-2 .content .mark img {
+  width: 9px;
+  height: 17px;
+}
+#projects .projects-wrapper .first-project .project-1 .content .mark p, #projects .projects-wrapper .first-project .project-2 .content .mark p, #projects .projects-wrapper .second-project .project-1 .content .mark p, #projects .projects-wrapper .second-project .project-2 .content .mark p {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
 }
 
-#projects {
-  background-color: red;
+#news, #contact {
+  height: 800px;
 }
 
 #news {
